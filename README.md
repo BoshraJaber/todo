@@ -9,7 +9,8 @@ an application designed for creating and organizing a “To Do” list in your b
 * As a user, I would like to easily mark to do items as completed
 * As a user, I would like to edit an existing to do item
 
-* Deployment: [RESTy App](https://60a203f9d4660c968c65f94c--todolistappmanager.netlify.app/) 
+## Deployment: 
+[ToDo List Manager App](https://60a203f9d4660c968c65f94c--todolistappmanager.netlify.app/) 
 
 * Author: Boshra Jaber
 * Setup: 

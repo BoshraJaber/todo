@@ -9,7 +9,7 @@ an application designed for creating and organizing a “To Do” list in your b
 * As a user, I would like to easily mark to do items as completed
 * As a user, I would like to edit an existing to do item
 
-* Deployment: [RESTy App](https://60a026f0c1a56f48a475dca7--resty-boshra.netlify.app/) 
+* Deployment: [RESTy App](https://60a203f9d4660c968c65f94c--todolistappmanager.netlify.app/) 
 
 * Author: Boshra Jaber
 * Setup: 
@@ -18,11 +18,9 @@ an application designed for creating and organizing a “To Do” list in your b
   - Remove the .git file so you don't have nested repo: `rm -rf .git`
   - To start the app: `npm start`
   - To use Sacc for styling: `npm i node-sass`
-
-## Testing the app:
-1. 
+  - To install react bootsrap: ` npm install react-bootstrap bootstrap@4.6.0`
 
 
 ## UML
-![Created with diagrams]()
+![Created with diagrams](./src/assets/lab31.png)
 

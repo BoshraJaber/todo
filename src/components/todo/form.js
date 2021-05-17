@@ -28,6 +28,7 @@ function TodoForm(props) {
           <Form.Control
             type="text"
             placeholder="Add To Do List Item"
+            name="text"
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -49,6 +50,7 @@ function TodoForm(props) {
             type="text"
             placeholder="Assigned To"
             onChange={handleInputChange}
+            name="assignee"
           />
         </Form.Group>
         <Button variant="primary" type="submit">

@@ -10,7 +10,7 @@ an application designed for creating and organizing a “To Do” list in your b
 * As a user, I would like to edit an existing to do item
 
 ## Deployment: 
-[ToDo List Manager App](https://60a22cd32552768ebe52b7ed--todolistappmanager.netlify.app/) 
+[ToDo List Manager App](https://60a25b9a251f5e00a0af6064--todolistappmanager.netlify.app/) 
 
 * Author: Boshra Jaber
 * Setup: 

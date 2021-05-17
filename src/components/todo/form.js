@@ -1,7 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import { useState} from "react";
+import {Button, Card, Form} from "react-bootstrap";
 
 function TodoForm(props) {
   const [item, setItem] = useState({});
@@ -19,8 +18,15 @@ function TodoForm(props) {
 
   return (
     <>
-      <h3>Add Item</h3>
-
+    <Card
+bg={'light'}
+key='6'
+text={'light' === 'light' ? 'dark' : 'white'}
+style={{ width: '100%' }}
+className="mb-2"
+>
+      <Card.Header style={{ 'text-align': 'center' }}>Add Item</Card.Header>
+      <Card.Body>
       {/* from here  */}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="exampleForm.ControlInput1">
@@ -58,8 +64,12 @@ function TodoForm(props) {
         </Button>{" "}
       </Form>
       {/* to here  */}
+      </Card.Body>
+      </Card>
     </>
   );
 }
 
 export default TodoForm;
+
+

@@ -1,38 +1,45 @@
-import React from 'react';
-import ListGroup from 'react-bootstrap/ListGroup'
+import React from "react";
+import { Badge, Toast } from "react-bootstrap";
+import { If, Then, Else } from "react-if";
 
 function TodoList(props) {
-
-    return (
-      <ListGroup>
-        {props.list.map(item => (
-          <ListGroup.Item
-          action ={true}
-          variant={item.complete ? 'danger' : 'success'}
-         
-            className={`complete-${item.complete.toString()}`}
-            key={item._id}
-          >
-            <span onClick={() => props.handleComplete(item._id)}>
-              {item.text}  /  {item.assignee}
-            </span>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-    );
-
+  return (
+    <>
+      {props.list.map((item) => (
+        <Toast
+          // bg={"light"}
+          // key={item._id}
+          // className="rounded mr-2"
+          
+          style={{ width: "100%", height:'auto',display: "flex",  flexDirection: 'column'}}
+          onClose={() => props.handleDelete(item._id)}
+        >
+            <Toast.Header style={{ justifyContent: 'space-between'}}>
+              <If condition={item.complete === false}>
+                <Then>
+                <Badge onClick={() => props.handleComplete(item._id)} pill variant="success">
+                <strong className="mr-auto"> pending</strong>
+              </Badge>{"     "}
+                </Then>
+                <Else>
+                <Badge onClick={() => props.handleComplete(item._id)}  pill variant="danger">
+                <strong className="mr-auto"> complete </strong>
+              </Badge>{"      "}
+                </Else>
+              </If>
+             {item.assignee}
+            </Toast.Header>
+            <Toast.Body>
+              {item.text}
+              <br />
+              <small className="mr-auto"  style={{ float: "right", }}> Difficulty: {item.difficulty}</small>
+             
+            </Toast.Body>
+          
+        </Toast>
+      ))}
+    </>
+  );
 }
 
 export default TodoList;
-
-{/* <>
-  <>No style</>
-  <ListGroup.Item variant="primary">Primary</ListGroup.Item>
-  <ListGroup.Item variant="secondary">Secondary</ListGroup.Item>
-  <ListGroup.Item variant="success">Success</ListGroup.Item>
-  <ListGroup.Item variant="danger">Danger</ListGroup.Item>
-  <ListGroup.Item variant="warning">Warning</ListGroup.Item>
-  <ListGroup.Item variant="info">Info</ListGroup.Item>
-  <ListGroup.Item variant="light">Light</ListGroup.Item>
-  <ListGroup.Item variant="dark">Dark</ListGroup.Item>
-</> */}

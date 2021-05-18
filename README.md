@@ -8,9 +8,11 @@ an application designed for creating and organizing a “To Do” list in your b
 * As a user, I would like to delete to do items that are no longer needed
 * As a user, I would like to easily mark to do items as completed
 * As a user, I would like to edit an existing to do item
+* As a user, I would like to be able to add, update, and delete To Do items
+* As a user, I would like my To Do Items to be permanently stored so that I can re-access them at any time, using any device
 
 ## Deployment: 
-[ToDo List Manager App](https://60a25b9a251f5e00a0af6064--todolistappmanager.netlify.app/) 
+[ToDo List Manager App](https://60a308ea97d5e600c11c69e4--todolistappmanager.netlify.app/) 
 
 * Author: Boshra Jaber
 * Setup: 
@@ -20,8 +22,9 @@ an application designed for creating and organizing a “To Do” list in your b
   - To start the app: `npm start`
   - To use Sacc for styling: `npm i node-sass`
   - To install react bootsrap: ` npm install react-bootstrap bootstrap@4.6.0`
+  - To use condition: `npm i react-if`
 
 
 ## UML
-![Created with diagrams](./src/assets/lab31.png)
+![Created with diagrams](./src/assets/customHook-lab32.png)
 

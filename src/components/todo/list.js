@@ -1,9 +1,13 @@
-import React from "react";
-import { Badge, Toast } from "react-bootstrap";
+import React, {useContext, useState} from "react";
+import { Badge, Toast, Pagination } from "react-bootstrap";
 import { If, Then, Else } from "react-if";
+import { SettingsContext } from '../../context/setting';
 
 function TodoList(props) {
-  return (
+  const context = useContext(SettingsContext);
+  const [currentPage, setCurrentPage] = useState(context.firstPage);
+  const itemsPerPage = context.itemsPerScreen;
+    return (
     <>
       {props.list.map((item) => (
         <Toast
@@ -38,6 +42,7 @@ function TodoList(props) {
           
         </Toast>
       ))}
+      
     </>
   );
 }

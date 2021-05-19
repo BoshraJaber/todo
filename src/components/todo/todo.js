@@ -3,7 +3,8 @@ import TodoForm from "./form.js";
 import TodoList from "./list.js";
 import { useEffect } from "react";
 import { Alert, Container, Row, Col } from "react-bootstrap";
-import useAjax from '../../customHooks/Ajax'
+import useAjax from '../../customHooks/Ajax';
+import SettingsProvider from '../../context/setting'
 
 import "./todo.scss";
 
@@ -23,6 +24,7 @@ function ToDo(props) {
   });
 
   return (
+    <SettingsProvider>
     <Container fluid="md">
       <br />
       <Row xs={7}>
@@ -48,6 +50,7 @@ function ToDo(props) {
         </Row>
       </section>
     </Container>
+    </SettingsProvider>
   );
 }
 

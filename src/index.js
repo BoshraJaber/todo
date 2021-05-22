@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginProvider from './Auth/context';
 
 import App from './app.js';
 
@@ -16,4 +17,9 @@ function Main()  {
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Main />, rootElement);
+ReactDOM.render(
+	<LoginProvider>
+		<Main />
+	</LoginProvider>,
+	rootElement,
+);

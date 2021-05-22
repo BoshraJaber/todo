@@ -12,7 +12,7 @@ an application designed for creating and organizing a “To Do” list in your b
 * As a user, I would like my To Do Items to be permanently stored so that I can re-access them at any time, using any device
 
 ## Deployment: 
-[ToDo List Manager App](https://60a95b3607b42b9e0b9dbaa4--todolistappmanager.netlify.ap) 
+[ToDo List Manager App](https://60a95b3607b42b9e0b9dbaa4--todolistappmanager.netlify.app) 
 
 * Author: Boshra Jaber
 * Setup: 
